@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let str = FanKitSwift().text
+        let str = "Hello world!"
         let bc = FanColor(black: 0.2)
         let wc = FanColor(white: 0.3)
         let hexColor = FanColor(hex: "73ff9f")
