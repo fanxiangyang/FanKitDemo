@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6613E56F2BAD7CC4000F347C /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6613E56E2BAD7CC4000F347C /* 2@2x.png */; };
+		668B34542BC8E57F0016D1F9 /* FanUITestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668B34532BC8E57F0016D1F9 /* FanUITestVC.swift */; };
+		668B34572BC8E5F70016D1F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 668B34562BC8E5F70016D1F9 /* SnapKit */; };
 		6698FB972B1596D100B40903 /* heartos.json in Resources */ = {isa = PBXBuildFile; fileRef = 6698FB962B1596D100B40903 /* heartos.json */; };
 		66CD6A772B0C53E2007D5498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD6A762B0C53E2007D5498 /* AppDelegate.swift */; };
 		66CD6A792B0C53E2007D5498 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD6A782B0C53E2007D5498 /* SceneDelegate.swift */; };
@@ -15,17 +17,16 @@
 		66CD6A7E2B0C53E2007D5498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CD6A7C2B0C53E2007D5498 /* Main.storyboard */; };
 		66CD6A802B0C53E5007D5498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CD6A7F2B0C53E5007D5498 /* Assets.xcassets */; };
 		66CD6A832B0C53E5007D5498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CD6A812B0C53E5007D5498 /* LaunchScreen.storyboard */; };
-		66CD6ABD2B0C7A0B007D5498 /* FanKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66CD6ABC2B0C7A0B007D5498 /* FanKitSwift */; };
 		66CD6AC02B0CAA6B007D5498 /* loona@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CD6ABF2B0CAA6B007D5498 /* loona@2x.png */; };
 		66D192E52BB3C9360047784C /* FanPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D192E42BB3C9360047784C /* FanPlayerVC.swift */; };
 		66DD409F2BB5093A0040EB96 /* loona.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 66DD409E2BB5093A0040EB96 /* loona.mp4 */; };
-		66E4CCA12BAC13110059148C /* FanKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66E4CCA02BAC13110059148C /* FanKitSwift */; };
 		66E4CCA32BAC15C50059148C /* FanKitSwift in Resources */ = {isa = PBXBuildFile; fileRef = 66CD6A8E2B0C6527007D5498 /* FanKitSwift */; };
 		66E4CCA62BAC15DD0059148C /* FanKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66E4CCA52BAC15DD0059148C /* FanKitSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6613E56E2BAD7CC4000F347C /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		668B34532BC8E57F0016D1F9 /* FanUITestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanUITestVC.swift; sourceTree = "<group>"; };
 		6698FB962B1596D100B40903 /* heartos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heartos.json; sourceTree = "<group>"; };
 		66CD6A732B0C53E2007D5498 /* DemoObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CD6A762B0C53E2007D5498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,8 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E4CCA62BAC15DD0059148C /* FanKitSwift in Frameworks */,
-				66CD6ABD2B0C7A0B007D5498 /* FanKitSwift in Frameworks */,
-				66E4CCA12BAC13110059148C /* FanKitSwift in Frameworks */,
+				668B34572BC8E5F70016D1F9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +81,7 @@
 				66CD6A782B0C53E2007D5498 /* SceneDelegate.swift */,
 				66CD6A7A2B0C53E2007D5498 /* ViewController.swift */,
 				66D192E42BB3C9360047784C /* FanPlayerVC.swift */,
+				668B34532BC8E57F0016D1F9 /* FanUITestVC.swift */,
 				66CD6A7C2B0C53E2007D5498 /* Main.storyboard */,
 				66CD6A7F2B0C53E5007D5498 /* Assets.xcassets */,
 				66CD6A812B0C53E5007D5498 /* LaunchScreen.storyboard */,
@@ -132,9 +133,8 @@
 			);
 			name = DemoObject;
 			packageProductDependencies = (
-				66CD6ABC2B0C7A0B007D5498 /* FanKitSwift */,
-				66E4CCA02BAC13110059148C /* FanKitSwift */,
 				66E4CCA52BAC15DD0059148C /* FanKitSwift */,
+				668B34562BC8E5F70016D1F9 /* SnapKit */,
 			);
 			productName = DemoObject;
 			productReference = 66CD6A732B0C53E2007D5498 /* DemoObject.app */;
@@ -166,6 +166,7 @@
 			mainGroup = 66CD6A6A2B0C53E2007D5498;
 			packageReferences = (
 				66E4CCA42BAC15DD0059148C /* XCLocalSwiftPackageReference "../../FanKitSwift" */,
+				668B34552BC8E5F70016D1F9 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 66CD6A742B0C53E2007D5498 /* Products */;
 			projectDirPath = "";
@@ -202,6 +203,7 @@
 				66CD6A7B2B0C53E2007D5498 /* ViewController.swift in Sources */,
 				66CD6A772B0C53E2007D5498 /* AppDelegate.swift in Sources */,
 				66CD6A792B0C53E2007D5498 /* SceneDelegate.swift in Sources */,
+				668B34542BC8E57F0016D1F9 /* FanUITestVC.swift in Sources */,
 				66D192E52BB3C9360047784C /* FanPlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,14 +432,22 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		66CD6ABC2B0C7A0B007D5498 /* FanKitSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = FanKitSwift;
+/* Begin XCRemoteSwiftPackageReference section */
+		668B34552BC8E5F70016D1F9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
 		};
-		66E4CCA02BAC13110059148C /* FanKitSwift */ = {
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		668B34562BC8E5F70016D1F9 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = FanKitSwift;
+			package = 668B34552BC8E5F70016D1F9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 		66E4CCA52BAC15DD0059148C /* FanKitSwift */ = {
 			isa = XCSwiftPackageProductDependency;
