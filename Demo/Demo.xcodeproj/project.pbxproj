@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		666DD2132BF5E77B00863DE7 /* FanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666DD2122BF5E77B00863DE7 /* FanManager.swift */; };
 		66CADAA32BBBBCE700B72A39 /* FanKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 66CADAA22BBBBCE700B72A39 /* FanKitSwift */; };
 		66CD6A5C2B0C52C7007D5498 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD6A5B2B0C52C7007D5498 /* DemoApp.swift */; };
 		66CD6A5E2B0C52C7007D5498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CD6A5D2B0C52C7007D5498 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		666DD2122BF5E77B00863DE7 /* FanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanManager.swift; sourceTree = "<group>"; };
 		66CD6A582B0C52C7007D5498 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CD6A5B2B0C52C7007D5498 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		66CD6A5D2B0C52C7007D5498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		66CD6A5A2B0C52C7007D5498 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				666DD2122BF5E77B00863DE7 /* FanManager.swift */,
 				66CD6A5B2B0C52C7007D5498 /* DemoApp.swift */,
 				66CD6A5D2B0C52C7007D5498 /* ContentView.swift */,
 				66CD6A5F2B0C52C9007D5498 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666DD2132BF5E77B00863DE7 /* FanManager.swift in Sources */,
 				66CD6A5E2B0C52C7007D5498 /* ContentView.swift in Sources */,
 				66CD6A5C2B0C52C7007D5498 /* DemoApp.swift in Sources */,
 			);
