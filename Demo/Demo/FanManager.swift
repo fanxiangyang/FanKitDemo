@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import FanKitSwift
 
 //@State 用于管理简单的局部视图状态。
 //@ObservedObject 用于跨视图共享和观察响应式数据模型，但不保证对象的生命周期与视图同步。
@@ -26,7 +26,7 @@ public struct FanSheetItem : Identifiable ,RawRepresentable {
         return UUID()
     }
     /// 关于
-    public static let about:FanSheetItem = .init(rawValue: "about")
+    nonisolated(unsafe) public static let about:FanSheetItem = .init(rawValue: "about")
     
    
 }
@@ -35,7 +35,7 @@ public struct FanSheetItem : Identifiable ,RawRepresentable {
 public class FanManager : ObservableObject {
     
     ///单利类全局弹窗
-    public static let shared = FanManager()
+    nonisolated(unsafe) public static let shared = FanManager()
     
     ///初始化
     public init() {
@@ -59,3 +59,37 @@ public class FanManager : ObservableObject {
 //        }
 //    }
 //}
+
+import Synchronization
+
+@available(iOS 18.0, *)
+class FanLockTest{
+    
+    let age = FanMutex<Int>(0)
+    
+    let age2 = Mutex<Int>(0)
+    
+    let age3 = Atomic(0)
+    
+    @FanLock var age4:Int = 0
+    
+    func startLock(){
+        age.withLock { a in
+            a += 1 //虚岁+1
+        }
+        let cAge = age.withLockValue { $0 }
+        
+        print("年龄：\(cAge)")
+        
+        age2.withLock { a2 in
+            a2 += 1
+        }
+        age2.withLockIfAvailable { a2 in
+            
+        }
+        age4 += 200
+        print("年龄：\(age4)")
+
+        
+    }
+}

@@ -34,21 +34,34 @@ struct ContentView: View {
             Button {
                 fanManager.sheetItem = .init(rawValue: "about")
             } label: {
-                Text("这个是另外一个button")
+                Text("这个是另外一个\nbutton")
             }
             .background(Color.gray)
             .font(.bold(Font.title)())
             .fan_textColor(.yellow)
 //            .tint(.primary)
+//            .cornerRadius(20)
+            .clipShape(FanRoundedCorner(topLeading: 20,bottomLeading: 10))
         }
-        .border(Color.black)
+        .clipShape(FanRoundedCorner(topLeading: 20,bottomLeading: 20))
+        .fan_overlay(content: {
+            FanRoundedCorner(topLeading: 20,bottomLeading: 10).stroke(Color.red, lineWidth: 3)
+        })
+
+//        .border(Color.black)
+
         //        .padding()
         .onAppear(){
             self.number = 1
             //            let c = FanKitSwift().text
             //            print(c)
             print("随机字符串：\(String(randomLen: 10))")
-            
+            if #available(iOS 18.0, *) {
+                FanLockTest().startLock()
+            } else {
+                // Fallback on earlier versions
+            }
+
         }
         .onChange(of: number, perform: { value in
             print(" newValue=\(value)")

@@ -33,7 +33,7 @@ class FanUITestVC: UIViewController {
         print("屏幕宽：\(FanWidth)")
         print("屏幕高：\(FanUIKitTool.fan_height)")
         let date = Date()
-        let dateStr = date.fan_string(format: "yyyy-MM-dd HH:mm:ss")
+        let dateStr = date.fan_format("yyyy-MM-dd HH:mm:ss")
         
         let date2 = Date.fan_date(from: "2016-09-09 15:47:11", format: "Y-M-dd HH:mm:ss")
         print("日期：\(String(describing: date2))")

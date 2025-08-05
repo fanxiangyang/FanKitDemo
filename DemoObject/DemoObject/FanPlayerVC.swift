@@ -9,6 +9,7 @@ import UIKit
 import FanKitSwift
 import AVFoundation
 
+@available(iOS 13.0, *)
 class FanPlayerVC: UIViewController {
     
     @IBOutlet weak var videoView: FanPlayerView!
