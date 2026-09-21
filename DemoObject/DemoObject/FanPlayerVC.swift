@@ -71,11 +71,14 @@ class FanPlayerVC: UIViewController {
     
     @IBAction func stop(_ sender: Any) {
         if(player?.avPlayer?.timeControlStatus == .playing){
-            player?.avPlayer?.pause()
+            player?.pause()
         }else{
-            player?.avPlayer?.play()
+            player?.resume()
         }
-        imgView?.image = self.player?.screenshot()
+        // 异步抽帧，避免点击播放控制时同步截图阻塞主线程。
+        player?.screenshot { [weak self] image in
+            self?.imgView?.image = image
+        }
         return
     }
     
