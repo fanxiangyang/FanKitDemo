@@ -61,7 +61,8 @@ struct ContentView: View {
             } else {
                 // Fallback on earlier versions
             }
-
+            let dic:[String:Any] = ["a":"b","data":["abc","xxx"]]
+            let a = dic.fan_value("a", def: Int.self)
         }
         .onChange(of: number, perform: { value in
             print(" newValue=\(value)")

@@ -76,6 +76,8 @@ class FanLockTest{
     func startLock(){
         age.withLock { a in
             a += 1 //虚岁+1
+            sleep(1)
+            print("a++")
         }
         let cAge = age.withLockValue { $0 }
         
